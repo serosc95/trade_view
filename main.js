@@ -2,6 +2,6 @@
 // function ready() {}
 function frameLoaded(){
     var iframe =  document.getElementById('graph');
-    var frameContent = iframe.contentWindow;
-    console.log('VALORESSS', frameContent);
+    var frameContent = iframe.contentWindow.document.body.innerHTML;
+    console.log("VALORES", frameContent);
 }
